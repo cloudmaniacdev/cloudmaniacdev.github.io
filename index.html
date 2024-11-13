@@ -1,7 +1,11 @@
 <html>
 <head>
 <script>
-location.href='trusafe://trusafe/SignIn'
+  const url = new URL(window.location.href);
+
+// Extract the 'code' parameter
+const code = url.searchParams.get('code');
+location.href='trusafe://trusafe/SignIn/'+code
 </script>
 </head>
 </html>
