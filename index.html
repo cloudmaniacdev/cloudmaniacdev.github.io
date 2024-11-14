@@ -5,16 +5,7 @@
 
 // Extract the 'code' parameter
 const code = url.searchParams.get('code');
-const newDiv = document.createElement('div');
-
-// Add some content or attributes
-newDiv.textContent = code;
-newDiv.style.backgroundColor = 'lightblue';
-newDiv.style.padding = '10px';
-newDiv.style.margin = '10px 0';
-
-// Append the div to the body
-document.body.appendChild(newDiv);
+document.body.append('Code = '+code)
 //location.href='trusafe://trusafe/SignIn/'+code
 </script>
   <body>
